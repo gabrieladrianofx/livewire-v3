@@ -1,0 +1,12 @@
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql-laravel-praticas
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: livewire_v3
+    ports:
+      - "3306:3306"
+    # volumes:
+    #   - ./docker/mysql_data:/var/lib/mysql
