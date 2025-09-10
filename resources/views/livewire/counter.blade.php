@@ -3,7 +3,7 @@
     <br>
     Counter :: {{ $counter }}
     <br>
-    <input wire:model="counter" />
+    <input wire:model.live="name" />
     <button wire:click="refresh">Refresh</button>
     <br><br>
 
