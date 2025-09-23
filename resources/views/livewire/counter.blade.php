@@ -26,4 +26,7 @@
     <br><br>
 
     <livewire:user-list />
+    <br><br>
+
+    <livewire:calculadora />
 </div>
