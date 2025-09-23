@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Calculadora extends Component
 {
-    public float $num1 = 0;
+    public ?string $num1 = null;
     public float $num2 = 0;
 
     public string $operator = '+';
@@ -23,5 +23,10 @@ class Calculadora extends Component
         $tmp = "{$this->num1 }{$this->operator}{$this->num2};";
 
         $this->result = eval('return '. $tmp);
+    }
+
+    public function naoQueroY()
+    {
+        $this->num1 = str($this->num1)->replace('y', 'JERERE', true);
     }
 }

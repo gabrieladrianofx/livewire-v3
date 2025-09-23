@@ -1,5 +1,5 @@
 <form wire:submit="calculate">
-    <input placeholder="primeiro numero" wire:model='num1' />
+    <input placeholder="primeiro numero" wire:model='num1' wire:keydown.y="naoQueroY" />
     <select wire:model="operator">
         <option value="+">+</option>
         <option value="-">-</option>
