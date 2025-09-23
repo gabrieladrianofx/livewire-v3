@@ -9,12 +9,12 @@
 
     <div x-data="">
         <span x-text="$wire.name"></span>
-        <button @click="$wire.name = 'jeremias'">test</button>
+        <button @click="$wire.set('name', 'jeremias')">test</button>
     </div>
 
     <br><br>
 
-    Name:: {{ $name }} {{ $lastName }}
+    Name:: {{ $this->fullName }}
     <div>
 
         <livewire:counter-inline />
@@ -23,4 +23,7 @@
     <br><br>
 
     <livewire:user-detail />
+    <br><br>
+
+    <livewire:user-list />
 </div>
