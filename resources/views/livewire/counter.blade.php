@@ -19,4 +19,8 @@
 
         <livewire:counter-inline />
     </div>
+
+    <br><br>
+
+    <livewire:user-detail />
 </div>
