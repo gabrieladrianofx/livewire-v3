@@ -2,6 +2,8 @@
 
 namespace App\Livewire;
 
+use Illuminate\Support\Facades\Log;
+use Livewire\Attributes\Renderless;
 use Livewire\Component;
 
 class Calculadora extends Component
@@ -35,6 +37,13 @@ class Calculadora extends Component
     {
         $this->authorize('add10', $prop);
         $this->$prop += 10;
+    }
+
+    #[Renderless]
+    public function toLogando()
+    {
+        $this->num2 = 1000;
+        Log::info('logando...' . now()->timestamp);
     }
 
 }

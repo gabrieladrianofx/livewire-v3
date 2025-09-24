@@ -25,6 +25,10 @@
         Calculando pelo Alpine
     </button>
 
+    <button type="button" @click="$wire.toLogando">
+        SO LOGANDO
+    </button>
+
     <br />
 
     <span wire:loading wire:target="calculate">Calculando....</span>
