@@ -21,6 +21,10 @@
         Add 10 num 2
     </button>
 
+    <button type="button" @click="$wire.calculate">
+        Calculando pelo Alpine
+    </button>
+
     <br />
 
     <span wire:loading wire:target="calculate">Calculando....</span>
