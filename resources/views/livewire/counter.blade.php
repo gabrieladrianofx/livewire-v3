@@ -1,5 +1,5 @@
 <div>
-    Hello, from component !!
+    {{-- Hello, from component !!
     <br>
     Counter :: {{ $counter }}
     <br>
@@ -28,5 +28,10 @@
     <livewire:user-list />
     <br><br>
 
-    <livewire:calculadora />
+    <livewire:calculadora /> --}}
+
+    <livewire:user-form />
+    <br />
+
+    <livewire:user-list />
 </div>
