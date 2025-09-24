@@ -32,6 +32,12 @@ class UserForm extends Component
         return view('livewire.user-form');
     }
 
+
+    // public function updated($attr, $value)
+    // {
+    //     $this->validateOnly($attr);
+    // }
+
     public function submit()
     {
         $this->validate();
