@@ -13,6 +13,14 @@
         <span wire:loading wire:target="calculate">Calculando....</span>
     </button>
 
+    <button type="button" wire:click="add10('num1')">
+        Add 10 num 1
+    </button>
+
+    <button type="button" wire:click="add10('num2')">
+        Add 10 num 2
+    </button>
+
     <br />
 
     <span wire:loading wire:target="calculate">Calculando....</span>
