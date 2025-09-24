@@ -8,8 +8,14 @@
     </select>
     <input placeholder="segundo numero" wire:model='num2' />
 
-    <button type="submit">Calcular</button>
+    <button type="submit">
+        <span wire:loading.class="hidden" wire:target="calculate">Calcular</span>
+        <span wire:loading wire:target="calculate">Calculando....</span>
+    </button>
 
+    <br />
+
+    <span wire:loading wire:target="calculate">Calculando....</span>
     <br />
 
     Resultado: {{ $result }}

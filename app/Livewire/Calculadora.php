@@ -6,7 +6,7 @@ use Livewire\Component;
 
 class Calculadora extends Component
 {
-    public ?string $num1 = null;
+    public ?string $num1 = '0';
     public float $num2 = 0;
 
     public string $operator = '+';
@@ -20,6 +20,7 @@ class Calculadora extends Component
 
     public function calculate()
     {
+        sleep(2);
         $tmp = "{$this->num1 }{$this->operator}{$this->num2};";
 
         $this->result = eval('return '. $tmp);
