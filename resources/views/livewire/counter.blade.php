@@ -34,4 +34,5 @@
     <br />
 
     <livewire:user-list />
+    <livewire:user-resume />
 </div>
