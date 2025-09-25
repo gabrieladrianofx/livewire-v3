@@ -37,8 +37,17 @@ class UserForm extends Form
     //     $this->validateOnly($attr);
     // }
 
+    public function setUser(User $user)
+    {
+        $this->name = $user->name;
+        $this->email = $user->email;
+        $this->id = $user->id;
+    }
+
     public function save()
     {
+        $this->validate();
+
         User::updateOrCreate(
             [ 'id' => $this->id ],
             [

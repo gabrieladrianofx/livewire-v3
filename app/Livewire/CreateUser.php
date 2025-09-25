@@ -17,8 +17,6 @@ class CreateUser extends Component
 
     public function submit()
     {
-        $this->validate();
-
         $this->form->save();
     }
 }

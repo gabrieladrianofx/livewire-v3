@@ -13,9 +13,7 @@ class EditUser extends Component
 
     public function mount()
     {
-        $this->form->name = $this->user->name;
-        $this->form->email = $this->user->email;
-        $this->form->id = $this->user->id;
+        $this->form->setUser($this->user);
     }
 
     public function render()
@@ -25,8 +23,6 @@ class EditUser extends Component
 
     public function submit()
     {
-        $this->validate();
-
         $this->form->save();
     }
 }

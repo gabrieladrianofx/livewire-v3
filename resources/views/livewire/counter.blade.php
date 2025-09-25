@@ -36,5 +36,8 @@
     <livewire:user-resume />
 
     <br />
+    <livewire:edit-user :user="\App\Models\User::find(2)" />
+
+    <br />
     <livewire:user-list />
 </div>
