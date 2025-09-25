@@ -30,9 +30,11 @@
 
     <livewire:calculadora /> --}}
 
-    <livewire:user-form />
+    <livewire:create-user />
     <br />
 
-    <livewire:user-list />
     <livewire:user-resume />
+
+    <br />
+    <livewire:user-list />
 </div>
